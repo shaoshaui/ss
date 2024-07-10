@@ -40,7 +40,7 @@ export default {
     },
     // 站点页脚配置
     footer: {
-      copyright: "Copyright © 2024-03 老邵",
+      copyright: "Copyright © 2022-12 老邵",
     },
     // 社交和项目链接地址配置
     socialLinks: [
