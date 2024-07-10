@@ -23,7 +23,7 @@ export default {
   // 主题配置
   themeConfig: {
     // 导航上的logo
-    logo: "/ss/logo.png",
+    logo: "/logo.png",
     // 隐藏logo右边的标题
     siteTitle: false,
     // 导航栏配置
