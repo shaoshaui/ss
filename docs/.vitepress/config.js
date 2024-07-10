@@ -10,20 +10,20 @@ import { vitePressNote } from "./sideBar/vitePressBar";
 
 export default {
   title: "一叶知秋的博客",
-  description: "关注web前端开发为主的博客网站和前端网址大全",
+  description: "山不向我走来，我便向他走去。前端开发为主的博客网站。",
   // 打包目录
   outDir: "../dist",
   base: "/ss/",
   head: [
     // 添加图标
-    ["link", { rel: "icon", href: "/logo.png" }],
+    ["link", { rel: "icon", href: "/ss/logo.png" }],
   ],
   // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
   lastUpdated: true, // string | boolean
   // 主题配置
   themeConfig: {
     // 导航上的logo
-    logo: "/logo.png",
+    logo: "/ss/logo.png",
     // 隐藏logo右边的标题
     siteTitle: false,
     // 导航栏配置
