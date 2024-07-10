@@ -1,0 +1,80 @@
+/**
+  网址导航页面样式
+**/
+
+.site-layout {
+
+  .VPDoc {
+    .container {
+      max-width: 100% !important;
+      justify-content: flex-start !important;
+
+      .aside {
+        order: 1;
+        width: 156px;
+
+        .aside-container,
+        .aside-curtain {
+          width: 124px;
+        }
+      }
+
+      .content {
+        order: 2;
+        max-width: 100% !important;
+
+        .content-container {
+          max-width: 100% !important;
+        }
+      }
+
+      .main {
+        height: auto;
+        overflow: hidden;
+
+        .vp-doc h2 {
+          margin: 0;
+        }
+      }
+
+    }
+  }
+
+  /* 隐藏底部在 github 上编辑此页模块*/
+  .VPDocFooter {
+    display: none;
+  }
+}
+
+@keyframes imgRota {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.image-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 192px;
+  height: 192px;
+  transform: translate(-50%, -50%);
+}
+.image {
+  position: relative;
+  .VPImage {
+    // display: none;
+    position: relative!important;
+    width: 280px;
+    height: 280px;
+    top: auto;
+    left: auto;
+    border-radius: 50%;
+    animation: imgRota 10s linear infinite;
+  }
+}

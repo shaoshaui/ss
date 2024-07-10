@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="debounceBtn">dbtn</button>
+    <button id="throttleBtn">rbtn</button>
+
+    <script>
+      const debounceBtn = document.getElementById("debounceBtn");
+      const throttleBtn = document.getElementById("throttleBtn");
+      const debounceBtnEvent = (e) => {
+        console.log("debounceBtnEvent", e);
+      };
+      const throttleBtnEvent = (e) => {
+        console.log("throttleBtnEvent", e);
+      };
+      // 连续点击只执行一次
+      // 立即执行：timer 有值就不能执行
+      // 定时器控制的是 timer 值
+      
+      const debounce = (fn, delay = 1000, immediate = true) => {
+      };
+
+      // 连续点击，一定时间只执行一次
+      // 默认执行，首次不执行控制
+      // wait 之后点击
+      // 尾巴控制：点击时有多次剩余时间，只取第一次点击的剩余时间
+      
+      const throttle = (
+        fn,
+        wait = 1000,
+        { leading = false, trailing = true }
+      ) => {
+      };
+
+      const debounceTarget = debounce(debounceBtnEvent);
+      const throttleTarget = throttle(throttleBtnEvent, 1000, {});
+
+      debounceBtn.addEventListener("click", debounceTarget);
+      throttleBtn.addEventListener("click", throttleTarget);
+    </script>
+  </body>
+</html>

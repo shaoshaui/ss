@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <button id="debounce">debounce</button>
+  <button id="throttle">throttle</button>
+  <script>
+    const myDebounce = (fn, wait = 500, immediate = true) => {
+      let timer = null
+      return () => {
+        timer && clearTimeout(timer)
+        if (immediate && !timer) {
+          fn()
+        }
+        timer = setTimeout(() => {
+          if (!immediate) {
+            fn()
+          }
+          timer = null
+        }, wait);
+      }
+    }
+
+
+    const onDebounce = () => {
+      console.log('debounce click')
+    }
+    const target1 = myDebounce(onDebounce);
+    debounce.addEventListener('click', function () {
+      target1();
+    });
+
+
+    const myThrottle = (fn, wait = 1000, immediate = true, last = true) => {
+      let timer = null
+      return () => {
+        if (timer) {
+          return;
+        }
+        if (immediate && !timer) {
+          fn();
+        }
+        timer = setTimeout(() => {
+          if (last) {
+            fn();
+          }
+          clearTimeout(timer)
+          timer = null
+        }, wait)
+      }
+    }
+    const onThrottle = () => {
+      console.log('therottle click')
+    }
+    const target = myThrottle(onThrottle);
+
+    throttle.addEventListener('click', function () {
+      target();
+    });
+
+  </script>
+</body>
+
+</html>
