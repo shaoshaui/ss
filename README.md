@@ -1,7 +1,7 @@
 # 老邵的博客
 基于vitePress搭建的个人轻型博客项目，从零开始用vitePress搭建的静态页面项目模板
 
-预览地址：[https://github.com/shaoshaui/ss](https://github.com/shaoshaui/ss)
+预览地址：[https://shaoshaui.github.io/ss](https://shaoshaui.github.io/ss)
 
 ## 目录说明
 
