@@ -21,7 +21,7 @@ export default [
   },
   {
     text: "我的简历",
-    link: "/guide/pdf",
+    link: "/ss/邵帅简历.pdf",
   },
   {
     text: "我的掘金",
