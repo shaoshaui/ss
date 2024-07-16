@@ -21,7 +21,7 @@ export default [
   },
   {
     text: "我的简历",
-    link: "/ss/邵帅简历.pdf",
+    link: "/ss/cv.pdf",
     target:"_blank"
   },
   {
